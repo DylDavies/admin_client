@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <title>Loading Application</title>
+</head>
+<body class=bg-light"">
+  <div class="container-fluid">
+    <div class="container-fluid pt-4">
+      <div class="card container bg-dark text-white" id="intdiv">
+        <div class="card-body">
+          <h5 class="card-title" id="intit">Checking Internet Connection...</h5>
+          <p class="card-text" id="int">Checking...</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-3" id="apidiv">
+      <div class="card container bg-dark text-white" id="apicheck">
+        <div class="card-body">
+          <h5 class="card-title" id="apiti">Checking API Connection...</h5>
+          <p class="card-text" id="apistat">Waiting on internet...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pb-4" id="rdiv" hidden><button class="btn btn-danger" id="rbut">&#8635;</button></div>
+  </div>
+  <script src="loadingWindow.js"></script>
+</body>
+</html>

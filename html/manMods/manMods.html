@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <title>Manage Mods</title>
+</head>
+<body class=bg-light"">
+  <div class="container pt-4 pb-4">
+    <h3>
+      Mod Management
+      <small class="text-muted">for server <strong><a id="name">name</a></strong> with ID <strong><a id="id">ID</a></strong></small>
+    </h3>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="container-fluid" id="error-div"></div>
+      <div class="container-fuild" id="success-div"></div>
+    </div>
+  </div>
+
+  <div class="container-fluid tables">
+    <div class="container-fluid">
+      <div class="container-fluid pb-4"><button class="btn btn-danger" id="rbut">&#8635;</button></div>
+      <table class="table table-dark rounded" id="usertable">
+        <thead>
+          <tr>
+            <th scope="col">User</th>
+            <th scope="col">Demote</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <script src="manModsscript.js"></script>
+</body>
+</html>

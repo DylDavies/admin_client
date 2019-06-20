@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <title>Manage Server</title>
+</head>
+<body class=bg-light"">
+  <div class="container pt-4 pb-4">
+    <h3>
+      Server Management
+      <small class="text-muted">for server <strong><a id="name">name</a></strong> with ID <strong><a id="id">ID</a></strong></small>
+    </h3>
+  </div>
+
+  <div class="container-fluid tables">
+    <div class="container-fluid pb-4"><button class="btn btn-danger" id="rbut">&#8635;</button></div>
+    <div class="container-fluid">
+      <h4>Users</h4>
+      <table class="table table-dark rounded">
+        <thead>
+          <tr>
+            <th scope="col">User Type</th>
+            <th scope="col">Count</th>
+            <th scope="col">Manage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Total</th>
+            <td><p id="tu">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" id="manTotalUsers">Manage</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Bot</th>
+            <td><p id="b">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" id="manTotalBots">Manage</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Staff</th>
+            <td><p id="s">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" disabled>Unavailiable</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container-fluid">
+      <h4>Staff</h4>
+      <table class="table table-dark rounded">
+        <thead>
+          <tr>
+            <th scope="col">Role</th>
+            <th scope="col">Users</th>
+            <th scope="col">Manage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Owner</th>
+            <td><p id="o">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" disabled>Unavailiable</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Admin</th>
+            <td><p id="a">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" disabled>Unavailiable</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Mod</th>
+            <td><p id="m">Loading...</p></td>
+            <td><button type="button" class="btn btn-danger" id="manMods">Manage</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container-fluid">
+      <h4>Bans</h4>
+      <table class="table table-dark rounded">
+        <thead>
+          <tr>
+            <th scope="col">Bans</th>
+            <th scope="col"><button type="button" class="btn btn-danger" id="manBans">Manage</button></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
